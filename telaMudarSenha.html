@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>Tela Mudar Senha</title>
+    <link href="../css/mudarSenha.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="https://purecss.io/css/pure/pure-min.css">
+    <link rel="stylesheet" href="https://purecss.io/layouts/side-menu/styles.css">
+    
+</head>
+<body>
+    <div id="layout" >
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
+ 
+        <div id="menu" class="">
+            <div class="pure-menu">
+                 
+                <ul class="pure-menu-list">                    
+                    <li class="pure-menu-item">
+                        <a href="../telaCliente.html" class="pure-menu-link"> Clientes </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="../telaMudarSenha.html" class="pure-menu-link"> Produtos </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="../telaMudarSenha.html" class="pure-menu-link"> Fornecedores </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="../telaMudarSenha.html" class="pure-menu-link"> Mudar de Senha </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Olá Fulano</h1>
+    </header>
+    <div class="form-container">
+        <form id="formulario">
+            <div class="icon-title">
+                <i class="fas fa-user"></i>
+                <h3>Mudar Senha</h3>
+            </div>
+            <input id="senha-atual" type="password" name="senha-atual" placeholder="Senha Atual" required>
+            <input id="nova-senha" type="password" name="nova-senha" placeholder="Nova Senha" required>
+            <input id="repita-senha" type="password" name="repita-senha" placeholder="Repita a Senha" required>
+            <button type="submit" nome="acao" href="../index/telaLogin.html" value="Salvar">
+                Salvar
+            </button>
+        </form>
+    </div>
+</body>
+<script src="../javascript\scriptMudarSenha.js"></script>
+
+</html>

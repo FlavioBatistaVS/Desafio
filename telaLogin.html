@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title> Tela Login </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="../css/login.css" rel="stylesheet">
+</head>
+<body>
+        <style>
+                html, body {
+                    height: 100%;
+                    margin: 0;
+                }
+                body {
+                    background: linear-gradient(to right, #82ebf9, #357982 );
+                }
+        </style>
+                <header>
+                        <h1> Nome do projeto </h1>
+                </header>
+        <form>
+        <div class="icon-title">
+                <i class="fas fa-user"></i>
+                <h3 href="../index/telaCadastro.html"> Login </h3>
+        </div>            
+        <input id="login" type="text" nome="login" placeholder="Usuario" required/>
+        <input id="password" type="password" name="senha" placeholder="Senha" required>
+        <input class="enviar" type="submit" nome="acao" value="Enviar">
+        </form>
+        <script>
+
+            var login = document.getElementById('login');
+            var password = document.getElementById('password');
+
+            login.addEventListener('focus',()=>{
+                    login.style.borderColor = "#357982";
+            });
+            login.addEventListener('blur',()=>{
+                    login.style.borderColor = "#ccc";
+            });
+            password.addEventListener('focus',()=>{
+                    password.style.borderColor = "#357982";
+            });
+            password.addEventListener('blur',()=>{
+                    password.style.borderColor = "#ccc";
+            });
+        </script>
+    </body>
+
+</html>
